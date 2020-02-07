@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Home Page</title>
+        <link rel="stylesheet" href="Today_home_css.css">
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="date">
+                
+            <script type="text/javascript">
+                // START DATE SCRIPT
+                
+                var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+                
+                   if (showdate == "yes") {
+                document.write('<div id="date-location">');
+                var d=new Date();
+                var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+                var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+                document.write('<span class="date-font">' + weekday[d.getDay()] + ' ');
+                document.write(monthname[d.getMonth()] + ' ');
+                document.write(d.getDate() + '. ');
+                document.write(d.getFullYear())
+                document.write('<br></span>')
+                document.write('</div>');
+                }
+                </script>
+                       
+                    
+                
+        </div>
+
+        <div class="title">
+            <p>Welcome to My Agenda Page</p>
+
+        </div>
+
+        <div class="weather">
+            <iframe src="https://calendar.google.com/calendar/embed?src=sibtain.ali%40gmail.com&ctz=Europe%2FLisbon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>  
+        </div>    
+            
+        
+    
+        <div id="main">
+
+            
+        </div>
+
+        <div class="AgendaDetail">
+            
+        </div>
+    </div>
+</body>
+</html>
